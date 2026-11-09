@@ -1,0 +1,13 @@
+data/
+metadata/
+raw_files/
+tmp_data/
+vis/*
+!vis/code_vis
+export/
+logs/
+*.qza
+*.qzv
+.ipynb_checkpoints/
+*.docx
+.Rproj.user
