@@ -36,6 +36,10 @@ qiime feature-table tabulate-seqs \
 	--i-data data/$OUT/rep_seqs_dada2.qza \
 	--o-visualization vis/$OUT/rep_seqs_dada2.qzv
 
+qiime metadata tabulate \
+	--m-input-file data/$OUT/dada2_stats_transition.qza \
+	--o-visualization vis/$OUT/dada2_stats_transition.qzv
+
 qiime feature-table summarize \
 	--i-table data/$OUT/table_dada2.qza \
 	--m-metadata-file metadata/metadata_combined_seq_runs_1-5.tsv \
